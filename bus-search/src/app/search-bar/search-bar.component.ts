@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-search-bar',
@@ -7,6 +6,10 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent implements OnInit {
+
+  selectedLine: string;
+
+  availableLines: string[] = ['174 - AVIACIÓN', '300 - INSTRUCCIONES'];
 
   constructor() { }
 
