@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { MapComponent } from './map/map.component';
 
-import { AgmCoreModule } from '@agm/core';
+// import {AgmCoreModule, GoogleMapsAPIWrapper} from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -17,11 +17,11 @@ import { AgmCoreModule } from '@agm/core';
   imports: [
     BrowserModule,
     NguiAutoCompleteModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyB7yG6dHZmO9juz7LCJ4WAB-nz8o42byZI'
-    })
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyB7yG6dHZmO9juz7LCJ4WAB-nz8o42byZI'
+    // })
   ],
-  providers: [],
+  providers: [],//GoogleMapsAPIWrapper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
