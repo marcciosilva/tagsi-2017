@@ -2,4 +2,13 @@
   Buscar líneas de ómnibus
 </h2>
 
-<input class="col-xs-12" auto-complete [(ngModel)]="selectedLine" [source]="availableLines" />
+<form action="submit" (submit)="onSubmit($event)">
+
+  <div class="row">
+  <input class="col-xs-12" auto-complete [(ngModel)]="selectedLine" name="selectedLine" [source]="availableLines"/>
+  </div>
+  <div class="row">
+  <button class="col-xs-12 btn-block btn btn-info">BUSCAR</button>
+  </div>
+
+</form>

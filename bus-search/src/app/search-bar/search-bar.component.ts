@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
@@ -7,13 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  selectedLine: string;
+  selectedLine: number;
 
-  availableLines: string[] = ['174 - AVIACIÓN', '300 - INSTRUCCIONES'];
+  availableLines = [100, 103, 104];
+
+  @Output()
+  lineDataRequest: EventEmitter<number> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(event) {
+    event.preventDefault();
+    this.lineDataRequest.emit(this.selectedLine); // Send selected line through event.
+    // TODO trigger event so that parent component gets line bla.
   }
 
 }

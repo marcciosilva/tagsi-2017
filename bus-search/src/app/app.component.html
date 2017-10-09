@@ -4,11 +4,11 @@
 
   <div style="text-align:center">
     <div class="row">
-      <app-search-bar></app-search-bar>
+      <app-search-bar (lineDataRequest)="fetchLineDataFromSearch($event)"></app-search-bar>
     </div>
     <hr>
     <div class="row">
-      <app-map></app-map>
+      <app-map [busStopsForSelectedLine]="busStopsForSelectedLine"></app-map>
     </div>
   </div>
   <!--<h2>Here are some links to help you start: </h2>-->
