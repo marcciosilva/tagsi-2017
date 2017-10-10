@@ -4,7 +4,8 @@
 
   <div style="text-align:center">
     <div class="row">
-      <app-search-bar (lineDataRequest)="fetchLineDataFromSearch($event)"></app-search-bar>
+      <!--(lineDataRequest)="fetchLineDataFromSearch($event)"></app-search-bar>-->
+      <app-search-bar [lines]="lines" (lineDataRequest)="fetchLineData($event)"></app-search-bar>
     </div>
     <hr>
     <div class="row">

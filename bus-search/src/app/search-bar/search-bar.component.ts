@@ -1,4 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Line} from '../line';
 
 @Component({
   selector: 'app-search-bar',
@@ -7,12 +8,11 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  selectedLine: number;
+  selectedLine: Line;
 
-  availableLines = [100, 103, 104];
+  @Input() lines: Line[];
 
-  @Output()
-  lineDataRequest: EventEmitter<number> = new EventEmitter();
+  @Output() lineDataRequest: EventEmitter<Line> = new EventEmitter();
 
   constructor() { }
 
@@ -23,6 +23,10 @@ export class SearchBarComponent implements OnInit {
     event.preventDefault();
     this.lineDataRequest.emit(this.selectedLine); // Send selected line through event.
     // TODO trigger event so that parent component gets line bla.
+  }
+
+  myValueFormatter(data: any): string {
+    return `${data.line} - ${data.destination}`;
   }
 
 }

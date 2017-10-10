@@ -5,6 +5,12 @@ const express = require('express')
 const app = express()
 var data;
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 app.get('/getLines', function (req, res) {
     // Doesn't receive params, and returns an array of objects were each object has two properties: 'line' (number) and
     // 'destination' (string).

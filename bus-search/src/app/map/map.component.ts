@@ -1,4 +1,5 @@
 import {Component, Input, OnChanges, OnInit} from '@angular/core';
+import {Stop} from '../stop';
 
 declare var google: any;
 
@@ -12,7 +13,7 @@ export class MapComponent implements OnInit, OnChanges {
   title = 'Mapa';
   map;
   markers = [];
-  @Input() busStopsForSelectedLine = [];
+  @Input() busStopsForSelectedLine: Array<Stop> = new Array<Stop>();
   startPinColor = '#8cbf65';
   midPinColor = '#ffe66c';
   endPinColor = '#bf5241';
@@ -122,6 +123,11 @@ export class MapComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes) {
     if (changes.hasOwnProperty('busStopsForSelectedLine')) { // Change on bus stops.
+      // cleanup.
+      this.markers.forEach(function(marker) {
+        marker.setMap(null);
+      });
+      this.markers = [];
       this.updateMap();
     }
   }
