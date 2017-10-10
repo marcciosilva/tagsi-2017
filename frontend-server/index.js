@@ -49,7 +49,7 @@ app.get('/getLine', function (req, res) {
             // TODO improve performance by breaking from this loop if data is ordered and already went past desired line.
             if (dataPoint.line === line && dataPoint.destination === destination) {
                 foundLine = true;
-                stops.push({lat: dataPoint.lat, lng: dataPoint.lng});
+                stops.push({lat: dataPoint.lng, lng: dataPoint.lat}); // TODO cambiar cuando los datos esten bien
             }
         });
         if (foundLine) res.send(stops);
