@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
 
   lines: Array<Line>;
   busStopsForSelectedLine: Array<Stop>;
+  baseUrl = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) {
   }
@@ -21,7 +22,7 @@ export class AppComponent implements OnInit {
     this.busStopsForSelectedLine = new Array<Stop>();
     var self = this;
     // Make the HTTP request:
-    this.http.get('http://localhost:3000/getLines').subscribe(response => {
+    this.http.get(this.baseUrl + 'getLines').subscribe(response => {
       // Read the result field from the JSON response.
       (<Array<Line>>response).forEach(function (dataPoint) {
         this.lines.push(dataPoint);
@@ -45,7 +46,7 @@ export class AppComponent implements OnInit {
       var params = new HttpParams();
       params = params.append('line', selectedLine.line);
       params = params.append('destination', selectedLine.destination);
-      this.http.get('http://localhost:3000/getLine', {params: params}).subscribe(response => {
+      this.http.get(this.baseUrl + 'getLine', {params: params}).subscribe(response => {
         // Read the result field from the JSON response.
         self.busStopsForSelectedLine = <Array<Stop>>response;
       });
