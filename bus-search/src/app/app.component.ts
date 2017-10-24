@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
 
   lines: Array<Line>;
   busStopsForSelectedLine: Array<Stop>;
+  // baseUrl = 'http://92be2b8f.ngrok.io/';
   baseUrl = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) {
@@ -29,13 +30,6 @@ export class AppComponent implements OnInit {
       }, self);
       // debugger; // Check self.lines.
     });
-
-    // this.lines = [
-    //   {
-    //     line: 100,
-    //     destination: 'LA CONCHA DE TU MADRE'
-    //   }
-    // ];
   }
 
   fetchLineData($event) {

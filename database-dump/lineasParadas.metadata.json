@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"lineasParadas.lineasParadas"},{"v":2,"key":{"idLineaParada":1},"name":"idLineaParada_1","ns":"lineasParadas.lineasParadas","background":true}]}

@@ -1,15 +1,19 @@
 /**
  * Created by marccio on 10/9/17.
  */
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const mongoClient = require('mongodb').MongoClient;
+const dataUrl = "mongodb://localhost:27017/tagsi";
+
 var data;
 
 // Add headers
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8888');
+    // res.setHeader('Access-Control-Allow-Origin', 'http://d9dc46ba.ngrok.io');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -86,8 +90,22 @@ app.listen(3000, function () {
     console.log('Loading dummy data...');
     try {
         // TODO get object from backend.
-        data = require("./assets/data.json");
-        console.log('Data loaded successfully');
+        var getDataFromBackend = true;
+
+        if (getDataFromBackend) {
+            mongoClient.connect(dataUrl, function (err, db) {
+                if (err) throw err;
+                db.collection('lineasParadas').find().toArray(function (err, result) {
+                    if (err) throw err;
+                    data = result;
+                    console.log('Data loaded successfully');
+                    db.close();
+                });
+            });
+        } else {
+            data = require("./assets/data.json");
+            console.log('Data loaded successfully');
+        }
     } catch (err) {
         console.log('Something went wrong while loading the data...');
     }
