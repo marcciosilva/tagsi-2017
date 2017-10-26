@@ -6,107 +6,100 @@ const app = express();
 const mongoClient = require('mongodb').MongoClient;
 const dataUrl = "mongodb://localhost:27017/tagsi";
 
-var data;
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!')
+});
 
-// Add headers
+// Add headers for CORS.
 app.use(function (req, res, next) {
-
     // Website you wish to allow to connect
     // res.setHeader('Access-Control-Allow-Origin', 'http://d9dc46ba.ngrok.io');
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
-
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
     // Request headers you wish to allow
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-
     // Set to true if you need the website to include cookies in the requests sent
     // to the API (e.g. in case you use sessions)
     res.setHeader('Access-Control-Allow-Credentials', true);
-
     // Pass to next layer of middleware
     next();
 });
 
-
-// app.use(function(req, res, next) {
-//     res.header("Access-Control-Allow-Origin", "*");
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     next();
-// });
-
+/**
+ * Doesn't receive params, and returns an array of objects were each object has two properties: 'line' (number)
+ * and 'destination' (string).
+ */
 app.get('/getLines', function (req, res) {
-    // Doesn't receive params, and returns an array of objects were each object has two properties: 'line' (number) and
-    // 'destination' (string).
-    console.log('Query is: ' + req.query); // Get params.
     try {
-        var lines = [];
-        // TODO improve performance.
-        var currentLine;
-        var currentDestination;
-        data.forEach(function (dataPoint) {
-            if (dataPoint.line !== currentLine && dataPoint.destination !== currentDestination) {
-                lines.push({line: dataPoint.line, destination: dataPoint.destination});
-                currentLine = dataPoint.line;
-                currentDestination = dataPoint.destination;
+        console.log('Query is: ' + JSON.stringify(req.query));
+        mongoClient.connect(dataUrl, function (err, db) {
+            if (err) {
+                res.send({msg: 'An error occurred when accessing the DB.'});
+                return;
             }
+            // Get only line and destination, and sort by line and destination in ascending order.
+            db.collection('lineasParadas').aggregate([{
+                "$group": {
+                    "_id": {
+                        "line": "$line",
+                        "destination": "$destination"
+                    }
+                }
+            }, {"$sort": {"_id.line": 1, "_id.destination": 1}}]).toArray(function (err, result) {
+                console.log('Data loaded successfully');
+                db.close();
+                if (err) {
+                    res.send({msg: 'An unexpected error occurred.'});
+                    return;
+                }
+                var lines = [];
+                result.forEach(function (individualResult) {
+                    lines.push({line: individualResult['_id'].line, destination: individualResult['_id'].destination});
+                });
+                if (lines.length > 0) res.send(lines);
+                else res.send({msg: 'No lines were found.'});
+                console.log('err is ' + err);
+                console.log(lines);
+            });
         });
-        console.log(lines);
-        if (lines.length > 0) res.send(lines);
-        else res.send({msg: 'No lines were found.'});
     } catch (err) {
         res.send({msg: 'An unexpected error occurred.'});
     }
 });
 
+/**
+ * Receives 'line' (number) and 'destination' (string) and returns array of objects with 'lat' and 'lng' properties
+ * (or an error object which only contains a 'msg' property explaning the error).
+ */
 app.get('/getLine', function (req, res) {
-    // Receives 'line' (number) and 'destination' (string) and returns array of objects with 'lat' and 'lng' properties
-    // (or an error object which only contains a 'msg' property explaning the error).
-    console.log('Query is: ' + req.query); // Get params.
     try {
+        console.log('Query is: ' + JSON.stringify(req.query));
         var line = req.query.line;
         var destination = req.query.destination;
-        // TODO handle error cases.
-        var stops = [];
-        var foundLine = false;
-        data.forEach(function (dataPoint) {
-            // TODO improve performance by breaking from this loop if data is ordered and already went past desired line.
-            if (dataPoint.line === line && dataPoint.destination === destination) {
-                foundLine = true;
-                stops.push({lat: dataPoint.lat, lng: dataPoint.lng}); // TODO cambiar cuando los datos esten bien
+        mongoClient.connect(dataUrl, function (err, db) {
+            if (err) {
+                res.send({msg: 'An error occurred when accessing the DB.'});
+                return;
             }
+            // Only return lat and lng.
+            db.collection('lineasParadas').find({
+                line: line,
+                destination: destination
+            }, {lat: 1, lng: 1, _id: 0})
+                .toArray(function (err, result) {
+                    console.log('Data loaded successfully');
+                    db.close();
+                    if (err) {
+                        res.send({msg: 'An unexpected error occurred.'});
+                        return;
+                    }
+                    if (result.length > 0) res.send(result);
+                    else res.send({msg: 'No lines were found.'});
+                    console.log(result);
+                });
         });
-        if (foundLine) res.send(stops);
-        else res.send({msg: 'The requested line could not be found.'});
     } catch (err) {
         res.send({msg: 'An unexpected error occurred.'});
     }
-    // res.send();
 });
-
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!')
-    console.log('Loading dummy data...');
-    try {
-        // TODO get object from backend.
-        var getDataFromBackend = true;
-
-        if (getDataFromBackend) {
-            mongoClient.connect(dataUrl, function (err, db) {
-                if (err) throw err;
-                db.collection('lineasParadas').find().toArray(function (err, result) {
-                    if (err) throw err;
-                    data = result;
-                    console.log('Data loaded successfully');
-                    db.close();
-                });
-            });
-        } else {
-            data = require("./assets/data.json");
-            console.log('Data loaded successfully');
-        }
-    } catch (err) {
-        console.log('Something went wrong while loading the data...');
-    }
-})

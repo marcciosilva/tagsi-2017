@@ -5,11 +5,13 @@
 <form action="submit" (submit)="onSubmit($event)">
 
   <div class="row">
-    <input class="col-xs-12" auto-complete [(ngModel)]="selectedLine" name="selectedLine" [source]="lines"
+    <input class="col-xs-10" auto-complete [(ngModel)]="selectedLine" name="selectedLine" [source]="lines"
            [list-formatter]="myValueFormatter" [value-formatter]="myValueFormatter"/>
+    <button type="submit" class="btn btn-sm btn-primary col-xs-1">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+    <button type="reset" class="btn btn-sm btn-danger col-xs-1">
+      <span class="glyphicon glyphicon-remove"></span>
+    </button>
   </div>
-  <div class="row">
-    <button class="col-xs-12 btn-block btn btn-info">BUSCAR</button>
-  </div>
-
 </form>

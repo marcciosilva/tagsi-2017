@@ -1,6 +1,6 @@
 export class Line {
 
-  line: number;
+  line: string;
   destination: string;
 
 }

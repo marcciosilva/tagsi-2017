@@ -21,6 +21,7 @@ export class MapComponent implements OnInit, OnChanges {
   pins;
   polyline;
   private debugMode = false;
+  private usingDifferentMarkerColors = false;
 
   ngOnInit(): void {
 
@@ -48,10 +49,11 @@ export class MapComponent implements OnInit, OnChanges {
     let pinSize;
     const pinTextSize = 7;
     this.pinShadow = new google.maps.MarkerImage('http://chart.apis.google.com/chart?chst=d_map_pin_shadow',
-        new google.maps.Size(40, 37),
-        new google.maps.Point(0, 0),
-        new google.maps.Point(12, 35));
+      new google.maps.Size(40, 37),
+      new google.maps.Point(0, 0),
+      new google.maps.Point(12, 35));
     let pinColor, pinImage;
+    // Create images for start, mid and end, and save them for later usage.
     for (let i = 0; i < 3; i++) {
       switch (i) {
         case 0:
@@ -81,17 +83,37 @@ export class MapComponent implements OnInit, OnChanges {
       const markerAmount = 15;
       for (let i = 0; i < markerAmount; i++) {
         let marker;
-        if (i === 0) {
-          marker = new google.maps.Marker({
-            position: {
-              lat: baseLat,
-              lng: baseLong,
-              opacity: 0.5
-            },
-            icon: this.pins[0].pinImage,
-            shadow: this.pinShadow
-          });
-        } else if (i < markerAmount - 1) {
+        if (this.usingDifferentMarkerColors) {
+          if (i === 0) {
+            marker = new google.maps.Marker({
+              position: {
+                lat: baseLat,
+                lng: baseLong,
+                opacity: 0.5
+              },
+              icon: this.pins[0].pinImage,
+              shadow: this.pinShadow
+            });
+          } else if (i < markerAmount - 1) {
+            marker = new google.maps.Marker({
+              position: {
+                lat: Math.random() * maxMarkerSeparation + this.markers[i - 1].getPosition().lat(),
+                lng: Math.random() * maxMarkerSeparation + this.markers[i - 1].getPosition().lng()
+              },
+              icon: this.pins[1].pinImage,
+              shadow: this.pinShadow
+            });
+          } else {
+            marker = new google.maps.Marker({
+              position: {
+                lat: Math.random() * maxMarkerSeparation + this.markers[i - 1].getPosition().lat(),
+                lng: Math.random() * maxMarkerSeparation + this.markers[i - 1].getPosition().lng()
+              },
+              icon: this.pins[2].pinImage,
+              shadow: this.pinShadow
+            });
+          }
+        } else {
           marker = new google.maps.Marker({
             position: {
               lat: Math.random() * maxMarkerSeparation + this.markers[i - 1].getPosition().lat(),
@@ -100,17 +122,7 @@ export class MapComponent implements OnInit, OnChanges {
             icon: this.pins[1].pinImage,
             shadow: this.pinShadow
           });
-        } else {
-          marker = new google.maps.Marker({
-            position: {
-              lat: Math.random() * maxMarkerSeparation + this.markers[i - 1].getPosition().lat(),
-              lng: Math.random() * maxMarkerSeparation + this.markers[i - 1].getPosition().lng()
-            },
-            icon: this.pins[2].pinImage,
-            shadow: this.pinShadow
-          });
         }
-
         polyPath.push(marker.position);
         marker.setTitle('marker-' + i);
         marker.setMap(this.map);
@@ -124,7 +136,7 @@ export class MapComponent implements OnInit, OnChanges {
   ngOnChanges(changes) {
     if (changes.hasOwnProperty('busStopsForSelectedLine')) { // Change on bus stops.
       // cleanup.
-      this.markers.forEach(function(marker) {
+      this.markers.forEach(function (marker) {
         marker.setMap(null);
       });
       this.markers = [];
@@ -136,26 +148,33 @@ export class MapComponent implements OnInit, OnChanges {
     const markerAmount = this.busStopsForSelectedLine.length;
     for (let i = 0; i < markerAmount; i++) {
       let marker;
-      if (i === 0) {
-        marker = new google.maps.Marker({
-          position: this.busStopsForSelectedLine[i],
-          icon: this.pins[0].pinImage,
-          shadow: this.pinShadow
-        });
-      } else if (i < markerAmount - 1) {
+      if (this.usingDifferentMarkerColors) {
+        if (i === 0) {
+          marker = new google.maps.Marker({
+            position: this.busStopsForSelectedLine[i],
+            icon: this.pins[0].pinImage,
+            shadow: this.pinShadow
+          });
+        } else if (i < markerAmount - 1) {
+          marker = new google.maps.Marker({
+            position: this.busStopsForSelectedLine[i],
+            icon: this.pins[1].pinImage,
+            shadow: this.pinShadow
+          });
+        } else {
+          marker = new google.maps.Marker({
+            position: this.busStopsForSelectedLine[i],
+            icon: this.pins[2].pinImage,
+            shadow: this.pinShadow
+          });
+        }
+      } else {
         marker = new google.maps.Marker({
           position: this.busStopsForSelectedLine[i],
           icon: this.pins[1].pinImage,
           shadow: this.pinShadow
         });
-      } else {
-        marker = new google.maps.Marker({
-          position: this.busStopsForSelectedLine[i],
-          icon: this.pins[2].pinImage,
-          shadow: this.pinShadow
-        });
       }
-
       let polyPath = this.polyline.getPath();
       polyPath = [];
       polyPath.push(marker.position);
