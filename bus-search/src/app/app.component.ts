@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   lines: Array<Line>;
   busStopsForSelectedLine: Array<Stop>;
-  // baseUrl = 'http://92be2b8f.ngrok.io/';
+  // baseUrl = 'https://1b9c1b94.ngrok.io/';
   baseUrl = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) {
