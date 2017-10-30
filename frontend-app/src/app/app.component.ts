@@ -12,8 +12,8 @@ export class AppComponent implements OnInit {
 
   lines: Array<Line>;
   busStopsForSelectedLine: Array<Stop>;
-  // baseUrl = 'https://1b9c1b94.ngrok.io/';
-  baseUrl = 'http://localhost:3000/';
+  baseUrl = 'http://backend.tagsi.sudacadev.com/';
+  // baseUrl = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) {
   }

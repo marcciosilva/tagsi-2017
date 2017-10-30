@@ -13,8 +13,8 @@ app.listen(3000, function () {
 // Add headers for CORS.
 app.use(function (req, res, next) {
     // Website you wish to allow to connect
-    // res.setHeader('Access-Control-Allow-Origin', 'https://ec59f4c5.ngrok.io');
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+    res.setHeader('Access-Control-Allow-Origin', 'https://ec59f4c5.ngrok.io');
+    // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     // Request headers you wish to allow

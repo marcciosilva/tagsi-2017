@@ -1,0 +1,21 @@
+config:
+  target: "http://backend.tagsi.sudacadev.com"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+    - duration: 120
+      arrivalRate: 5
+      rampTo: 50
+    - duration: 600
+      arrivalRate: 50
+scenarios:
+  - name: "Search for single line stops"
+    flow:
+      - get:
+          url: "/getLines"
+          capture:
+            json: "$.results[0]"
+            as: "lineData"
+      - think: 6
+      - get:
+          url: "/getLine?line={{ lineData.line }}&destination={{ lineData.destination }}"

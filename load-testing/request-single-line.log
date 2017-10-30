@@ -1,0 +1,1887 @@
+Started phase 0, duration: 60s @ 16:58:51(-0300) 2017-10-29
+Report @ 16:58:59(-0300) 2017-10-29
+  Scenarios launched:  39
+  Scenarios completed: 5
+  Requests completed:  42
+  Concurrent users:    34
+  RPS sent: 5.87
+  Request latency:
+    min: 194.2
+    max: 1415.3
+    median: 395.1
+    p95: 438.8
+    p99: NaN
+  Scenario duration:
+    min: 6806.6
+    max: 6819.5
+    median: 6813.2
+    p95: NaN
+    p99: NaN
+  Codes:
+    200: 42
+
+Report @ 16:59:09(-0300) 2017-10-29
+  Scenarios launched:  50
+  Scenarios completed: 50
+  Requests completed:  100
+  Concurrent users:    35
+  RPS sent: 9.73
+  Request latency:
+    min: 181.9
+    max: 1433
+    median: 345.1
+    p95: 448.3
+    p99: 1432.6
+  Scenario duration:
+    min: 6728.4
+    max: 8113.3
+    median: 6792.8
+    p95: 6924.8
+    p99: 8113.3
+  Codes:
+    200: 100
+
+Report @ 16:59:19(-0300) 2017-10-29
+  Scenarios launched:  51
+  Scenarios completed: 51
+  Requests completed:  101
+  Concurrent users:    36
+  RPS sent: 10.23
+  Request latency:
+    min: 181.9
+    max: 1472.7
+    median: 277.6
+    p95: 456.8
+    p99: 1460.6
+  Scenario duration:
+    min: 6725.3
+    max: 7821.8
+    median: 6802.2
+    p95: 7203
+    p99: 7821.7
+  Codes:
+    200: 101
+
+Report @ 16:59:29(-0300) 2017-10-29
+  Scenarios launched:  50
+  Scenarios completed: 50
+  Requests completed:  100
+  Concurrent users:    36
+  RPS sent: 10.11
+  Request latency:
+    min: 182.3
+    max: 3437
+    median: 318.2
+    p95: 446
+    p99: 1951.3
+  Scenario duration:
+    min: 6720.1
+    max: 10186.3
+    median: 6801
+    p95: 8170
+    p99: 10186.3
+  Codes:
+    200: 100
+
+Report @ 16:59:39(-0300) 2017-10-29
+  Scenarios launched:  50
+  Scenarios completed: 50
+  Requests completed:  100
+  Concurrent users:    35
+  RPS sent: 10.11
+  Request latency:
+    min: 185.5
+    max: 494.8
+    median: 338
+    p95: 445.1
+    p99: 480.8
+  Scenario duration:
+    min: 6734.8
+    max: 6881.6
+    median: 6804.6
+    p95: 6862.6
+    p99: 6881.6
+  Codes:
+    200: 100
+
+Report @ 16:59:49(-0300) 2017-10-29
+  Scenarios launched:  50
+  Scenarios completed: 48
+  Requests completed:  99
+  Concurrent users:    36
+  RPS sent: 10.01
+  Request latency:
+    min: 182
+    max: 1540.1
+    median: 378.5
+    p95: 454.9
+    p99: 1482.3
+  Scenario duration:
+    min: 6717.4
+    max: 7898.6
+    median: 6795.4
+    p95: 6863.7
+    p99: NaN
+  Codes:
+    200: 99
+
+Started phase 1, duration: 120s @ 16:59:51(-0300) 2017-10-29
+Report @ 16:59:59(-0300) 2017-10-29
+  Scenarios launched:  71
+  Scenarios completed: 56
+  Requests completed:  125
+  Concurrent users:    55
+  RPS sent: 12.73
+  Request latency:
+    min: 186.8
+    max: 1579.3
+    median: 385.9
+    p95: 594.1
+    p99: 1477.1
+  Scenario duration:
+    min: 6736.8
+    max: 8106.3
+    median: 6815.8
+    p95: 7097.8
+    p99: 8106.2
+  Codes:
+    200: 125
+
+Report @ 17:00:09(-0300) 2017-10-29
+  Scenarios launched:  87
+  Scenarios completed: 70
+  Requests completed:  157
+  Concurrent users:    68
+  RPS sent: 15.67
+  Request latency:
+    min: 181.1
+    max: 1380.1
+    median: 391.7
+    p95: 682
+    p99: 761.2
+  Scenario duration:
+    min: 6723.2
+    max: 8294.6
+    median: 6823.3
+    p95: 6999.4
+    p99: 8270
+  Codes:
+    200: 157
+
+Report @ 17:00:19(-0300) 2017-10-29
+  Scenarios launched:  123
+  Scenarios completed: 99
+  Requests completed:  221
+  Concurrent users:    93
+  RPS sent: 22.05
+  Request latency:
+    min: 182.5
+    max: 2933.5
+    median: 481.4
+    p95: 1702.9
+    p99: 2810.2
+  Scenario duration:
+    min: 6734.3
+    max: 7900.5
+    median: 6958.3
+    p95: 7774.5
+    p99: 7851.7
+  Codes:
+    200: 221
+
+Report @ 17:00:29(-0300) 2017-10-29
+  Scenarios launched:  156
+  Scenarios completed: 129
+  Requests completed:  275
+  Concurrent users:    121
+  RPS sent: 28.76
+  Request latency:
+    min: 188.2
+    max: 2619
+    median: 408.3
+    p95: 827.9
+    p99: 1727.3
+  Scenario duration:
+    min: 6753.2
+    max: 9808.3
+    median: 7081.2
+    p95: 8262.8
+    p99: 9661.1
+  Codes:
+    200: 275
+
+Report @ 17:00:39(-0300) 2017-10-29
+  Scenarios launched:  201
+  Scenarios completed: 108
+  Requests completed:  199
+  Concurrent users:    212
+  RPS sent: 34.46
+  Request latency:
+    min: 304.1
+    max: 5700.8
+    median: 1537
+    p95: 4186.7
+    p99: 5387.3
+  Scenario duration:
+    min: 6973.1
+    max: 10507.6
+    median: 7648.9
+    p95: 9564.4
+    p99: 10357.8
+  Codes:
+    200: 199
+
+Report @ 17:00:49(-0300) 2017-10-29
+  Scenarios launched:  253
+  Scenarios completed: 87
+  Requests completed:  457
+  Concurrent users:    378
+  RPS sent: 29.52
+  Request latency:
+    min: 173.3
+    max: 11538.9
+    median: 4017.6
+    p95: 10129.2
+    p99: 11052.3
+  Scenario duration:
+    min: 11582.2
+    max: 16484
+    median: 13591
+    p95: 15576.9
+    p99: 16228.4
+  Codes:
+    200: 457
+
+Report @ 17:00:59(-0300) 2017-10-29
+  Scenarios launched:  296
+  Scenarios completed: 485
+  Requests completed:  777
+  Concurrent users:    404
+  RPS sent: 78.54
+  Request latency:
+    min: 164.1
+    max: 8908.4
+    median: 258.8
+    p95: 800.2
+    p99: 1357.8
+  Scenario duration:
+    min: 6494.9
+    max: 17777.2
+    median: 7699.5
+    p95: 16303.6
+    p99: 17322
+  Codes:
+    200: 777
+
+Report @ 17:01:09(-0300) 2017-10-29
+  Scenarios launched:  326
+  Scenarios completed: 282
+  Requests completed:  601
+  Concurrent users:    233
+  RPS sent: 60.7
+  Request latency:
+    min: 163.8
+    max: 3347.2
+    median: 333.4
+    p95: 1084.8
+    p99: 1349.2
+  Scenario duration:
+    min: 6495.5
+    max: 15076
+    median: 6523.1
+    p95: 7513.2
+    p99: 7976.9
+  Codes:
+    200: 601
+
+Report @ 17:01:19(-0300) 2017-10-29
+  Scenarios launched:  354
+  Scenarios completed: 355
+  Requests completed:  706
+  Concurrent users:    245
+  RPS sent: 70.86
+  Request latency:
+    min: 163.8
+    max: 2347.2
+    median: 333.8
+    p95: 1333.6
+    p99: 1804.8
+  Scenario duration:
+    min: 6498.2
+    max: 8509.1
+    median: 6525.5
+    p95: 7513.3
+    p99: 8175.4
+  Codes:
+    200: 706
+
+Report @ 17:01:29(-0300) 2017-10-29
+  Scenarios launched:  404
+  Scenarios completed: 366
+  Requests completed:  766
+  Concurrent users:    274
+  RPS sent: 76.49
+  Request latency:
+    min: 163.4
+    max: 3344.7
+    median: 334.7
+    p95: 1331.1
+    p99: 1773.6
+  Scenario duration:
+    min: 6492.6
+    max: 9520.4
+    median: 6529
+    p95: 7941.4
+    p99: 8520.4
+  Codes:
+    200: 766
+
+Report @ 17:01:39(-0300) 2017-10-29
+  Scenarios launched:  437
+  Scenarios completed: 406
+  Requests completed:  845
+  Concurrent users:    301
+  RPS sent: 83.98
+  Request latency:
+    min: 163.4
+    max: 5346.8
+    median: 334.7
+    p95: 1339
+    p99: 2290.8
+  Scenario duration:
+    min: 6495.7
+    max: 8555.1
+    median: 6525.9
+    p95: 7552.7
+    p99: 8491.7
+  Codes:
+    200: 845
+
+Report @ 17:01:49(-0300) 2017-10-29
+  Scenarios launched:  479
+  Scenarios completed: 451
+  Requests completed:  914
+  Concurrent users:    329
+  RPS sent: 92.74
+  Request latency:
+    min: 163.7
+    max: 5355.3
+    median: 335.6
+    p95: 1336.2
+    p99: 2181.5
+  Scenario duration:
+    min: 6496.1
+    max: 12544
+    median: 6524.5
+    p95: 7953
+    p99: 9536.9
+  Codes:
+    200: 914
+
+Started phase 2, duration: 600s @ 17:01:53(-0300) 2017-10-29
+Warning: 
+CPU usage of Artillery seems to be very high
+which may severely affect its performance.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:01:59(-0300) 2017-10-29
+  Scenarios launched:  495
+  Scenarios completed: 476
+  Requests completed:  979
+  Concurrent users:    348
+  RPS sent: 96.91
+  Request latency:
+    min: 163.2
+    max: 11331.9
+    median: 337.9
+    p95: 1349.2
+    p99: 3336.4
+  Scenario duration:
+    min: 6495.3
+    max: 15590.6
+    median: 6532.1
+    p95: 7955.8
+    p99: 8924.4
+  Codes:
+    200: 979
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:02:09(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 507
+  Requests completed:  1005
+  Concurrent users:    354
+  RPS sent: 100.7
+  Request latency:
+    min: 164.1
+    max: 7356.1
+    median: 332.8
+    p95: 1346.7
+    p99: 2595.8
+  Scenario duration:
+    min: 6495.4
+    max: 17503.7
+    median: 6534.1
+    p95: 7966
+    p99: 9714.9
+  Codes:
+    200: 1005
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:02:19(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 496
+  Requests completed:  994
+  Concurrent users:    351
+  RPS sent: 99
+  Request latency:
+    min: 163.7
+    max: 5334
+    median: 336.5
+    p95: 1343.1
+    p99: 3082.8
+  Scenario duration:
+    min: 6493.6
+    max: 11491.1
+    median: 6532.3
+    p95: 7978.6
+    p99: 9542
+  Codes:
+    200: 994
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:02:29(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 504
+  Requests completed:  1009
+  Concurrent users:    353
+  RPS sent: 99.9
+  Request latency:
+    min: 163.6
+    max: 6354.9
+    median: 335.9
+    p95: 1349.4
+    p99: 3332.7
+  Scenario duration:
+    min: 6496.1
+    max: 11505
+    median: 6534.6
+    p95: 8168.7
+    p99: 10195.5
+  Codes:
+    200: 1009
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:02:39(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 497
+  Requests completed:  998
+  Concurrent users:    351
+  RPS sent: 100.1
+  Request latency:
+    min: 163.6
+    max: 6779
+    median: 335.4
+    p95: 1352.2
+    p99: 3347
+  Scenario duration:
+    min: 6495.8
+    max: 12522.2
+    median: 6530.3
+    p95: 8048.8
+    p99: 9530.6
+  Codes:
+    200: 998
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:02:49(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 503
+  Requests completed:  998
+  Concurrent users:    352
+  RPS sent: 100
+  Request latency:
+    min: 163.7
+    max: 3362.1
+    median: 334.8
+    p95: 1343.5
+    p99: 2469.3
+  Scenario duration:
+    min: 6495.4
+    max: 12952.3
+    median: 6530.3
+    p95: 8472.9
+    p99: 9723.4
+  Codes:
+    200: 998
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:02:59(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 495
+  Requests completed:  1000
+  Concurrent users:    352
+  RPS sent: 99
+  Request latency:
+    min: 163.6
+    max: 5630.9
+    median: 335.3
+    p95: 1347.6
+    p99: 3343.8
+  Scenario duration:
+    min: 6494.4
+    max: 11518.3
+    median: 6531
+    p95: 7960.8
+    p99: 9518
+  Codes:
+    200: 1000
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:03:09(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 504
+  Requests completed:  1012
+  Concurrent users:    351
+  RPS sent: 99.8
+  Request latency:
+    min: 163.9
+    max: 8316.7
+    median: 335.4
+    p95: 1348.1
+    p99: 3337.7
+  Scenario duration:
+    min: 6496.4
+    max: 12308.4
+    median: 6526.9
+    p95: 8186.2
+    p99: 9598.1
+  Codes:
+    200: 1012
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:03:19(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 503
+  Requests completed:  998
+  Concurrent users:    351
+  RPS sent: 100.1
+  Request latency:
+    min: 162.9
+    max: 3812
+    median: 336.9
+    p95: 1344.5
+    p99: 2897.3
+  Scenario duration:
+    min: 6493.7
+    max: 14487.7
+    median: 6534.7
+    p95: 7974.2
+    p99: 10578.3
+  Codes:
+    200: 998
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:03:29(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 489
+  Requests completed:  986
+  Concurrent users:    355
+  RPS sent: 99.4
+  Request latency:
+    min: 164.4
+    max: 8331.6
+    median: 336
+    p95: 1358.5
+    p99: 3349.6
+  Scenario duration:
+    min: 6495.9
+    max: 14513.2
+    median: 6533.2
+    p95: 8009.3
+    p99: 9945.2
+  Codes:
+    200: 986
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:03:39(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 508
+  Requests completed:  1015
+  Concurrent users:    355
+  RPS sent: 100.8
+  Request latency:
+    min: 164
+    max: 7348.5
+    median: 334.3
+    p95: 1345
+    p99: 2343.3
+  Scenario duration:
+    min: 6495.1
+    max: 13530.5
+    median: 6532.8
+    p95: 8511.3
+    p99: 10915.5
+  Codes:
+    200: 1015
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:03:49(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 504
+  Requests completed:  1001
+  Concurrent users:    349
+  RPS sent: 100.6
+  Request latency:
+    min: 163.6
+    max: 7350.9
+    median: 335.9
+    p95: 1342.7
+    p99: 2348.7
+  Scenario duration:
+    min: 6495.5
+    max: 13977.9
+    median: 6527.3
+    p95: 7980.7
+    p99: 9530.7
+  Codes:
+    200: 1001
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:03:59(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 497
+  Requests completed:  1000
+  Concurrent users:    348
+  RPS sent: 99.5
+  Request latency:
+    min: 164.2
+    max: 7346.8
+    median: 335.4
+    p95: 1344.7
+    p99: 3346.3
+  Scenario duration:
+    min: 6495.9
+    max: 11501.2
+    median: 6531.3
+    p95: 7974.7
+    p99: 9525.5
+  Codes:
+    200: 1000
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:04:09(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 504
+  Requests completed:  1008
+  Concurrent users:    350
+  RPS sent: 99.3
+  Request latency:
+    min: 164.4
+    max: 8294
+    median: 335.7
+    p95: 1343.3
+    p99: 2345.6
+  Scenario duration:
+    min: 6496.2
+    max: 13954.2
+    median: 6532.1
+    p95: 8421.6
+    p99: 9790
+  Codes:
+    200: 1008
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:04:19(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 496
+  Requests completed:  990
+  Concurrent users:    349
+  RPS sent: 99.7
+  Request latency:
+    min: 163.7
+    max: 8613.9
+    median: 334.6
+    p95: 1344.8
+    p99: 2344
+  Scenario duration:
+    min: 6492.5
+    max: 14465
+    median: 6529.4
+    p95: 7969.8
+    p99: 9203.3
+  Codes:
+    200: 990
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:04:29(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 500
+  Requests completed:  1006
+  Concurrent users:    354
+  RPS sent: 100.2
+  Request latency:
+    min: 164.2
+    max: 7797.6
+    median: 335.6
+    p95: 1349.8
+    p99: 3332
+  Scenario duration:
+    min: 6496
+    max: 14795.2
+    median: 6535.2
+    p95: 7973.7
+    p99: 9786.5
+  Codes:
+    200: 1006
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:04:39(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 509
+  Requests completed:  1004
+  Concurrent users:    349
+  RPS sent: 100.3
+  Request latency:
+    min: 164.4
+    max: 3364.6
+    median: 335.9
+    p95: 1343.3
+    p99: 2365.4
+  Scenario duration:
+    min: 6496
+    max: 13529.1
+    median: 6532.1
+    p95: 7950.2
+    p99: 9516.5
+  Codes:
+    200: 1004
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:04:49(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 502
+  Requests completed:  1005
+  Concurrent users:    350
+  RPS sent: 100.8
+  Request latency:
+    min: 163.5
+    max: 7352.4
+    median: 336.2
+    p95: 1343.8
+    p99: 3036.7
+  Scenario duration:
+    min: 6495.5
+    max: 13522.9
+    median: 6529.4
+    p95: 7984.8
+    p99: 9521.2
+  Codes:
+    200: 1005
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:04:59(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 491
+  Requests completed:  985
+  Concurrent users:    354
+  RPS sent: 98.7
+  Request latency:
+    min: 164.8
+    max: 7364.4
+    median: 338
+    p95: 1358.5
+    p99: 3345.4
+  Scenario duration:
+    min: 6495.8
+    max: 12005.9
+    median: 6533.9
+    p95: 7991.3
+    p99: 9512.8
+  Codes:
+    200: 985
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:05:09(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 503
+  Requests completed:  1012
+  Concurrent users:    350
+  RPS sent: 99.7
+  Request latency:
+    min: 163.2
+    max: 4339.8
+    median: 335.2
+    p95: 1346.8
+    p99: 3333.6
+  Scenario duration:
+    min: 6495.3
+    max: 14009.6
+    median: 6532.6
+    p95: 8480
+    p99: 9569.3
+  Codes:
+    200: 1012
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:05:19(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 504
+  Requests completed:  1000
+  Concurrent users:    346
+  RPS sent: 100.6
+  Request latency:
+    min: 163.6
+    max: 3785.7
+    median: 336
+    p95: 1346.4
+    p99: 2567.8
+  Scenario duration:
+    min: 6494.9
+    max: 10054.2
+    median: 6526.9
+    p95: 7955.3
+    p99: 9530
+  Codes:
+    200: 1000
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:05:29(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 501
+  Requests completed:  1002
+  Concurrent users:    351
+  RPS sent: 100
+  Request latency:
+    min: 163.4
+    max: 7384.6
+    median: 334.4
+    p95: 1346.5
+    p99: 3331.5
+  Scenario duration:
+    min: 6493
+    max: 9956.7
+    median: 6532
+    p95: 7978.4
+    p99: 9500.3
+  Codes:
+    200: 1002
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:05:39(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 500
+  Requests completed:  1000
+  Concurrent users:    350
+  RPS sent: 99.5
+  Request latency:
+    min: 164.6
+    max: 7369.8
+    median: 337.7
+    p95: 1346.8
+    p99: 2832.5
+  Scenario duration:
+    min: 6494.7
+    max: 14539.1
+    median: 6532
+    p95: 7994.9
+    p99: 10481.1
+  Codes:
+    200: 1000
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:05:49(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 498
+  Requests completed:  997
+  Concurrent users:    350
+  RPS sent: 100.2
+  Request latency:
+    min: 163.5
+    max: 7910.7
+    median: 334.8
+    p95: 1342.7
+    p99: 2352.4
+  Scenario duration:
+    min: 6495.7
+    max: 14015.2
+    median: 6531.9
+    p95: 7974
+    p99: 9749
+  Codes:
+    200: 997
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:05:59(-0300) 2017-10-29
+  Scenarios launched:  451
+  Scenarios completed: 449
+  Requests completed:  897
+  Concurrent users:    356
+  RPS sent: 89.71
+  Request latency:
+    min: 163.9
+    max: 7339.7
+    median: 335.1
+    p95: 1350.2
+    p99: 3333.3
+  Scenario duration:
+    min: 6493.5
+    max: 14112.4
+    median: 6531.6
+    p95: 8475.9
+    p99: 9528.8
+  Codes:
+    200: 897
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:06:09(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 506
+  Requests completed:  1013
+  Concurrent users:    350
+  RPS sent: 91.45
+  Request latency:
+    min: 163.7
+    max: 7784.7
+    median: 335.1
+    p95: 1339.4
+    p99: 3331.4
+  Scenario duration:
+    min: 6495.8
+    max: 13508.6
+    median: 6528.9
+    p95: 7983.9
+    p99: 9518.2
+  Codes:
+    200: 1013
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:06:19(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 503
+  Requests completed:  1007
+  Concurrent users:    351
+  RPS sent: 91.27
+  Request latency:
+    min: 163.3
+    max: 7353.2
+    median: 334
+    p95: 1338.9
+    p99: 2308
+  Scenario duration:
+    min: 6494.9
+    max: 15425.7
+    median: 6527.3
+    p95: 7551.3
+    p99: 9565.1
+  Codes:
+    200: 1007
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:06:29(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 493
+  Requests completed:  986
+  Concurrent users:    353
+  RPS sent: 90.19
+  Request latency:
+    min: 164
+    max: 3862
+    median: 334.4
+    p95: 1342.2
+    p99: 3335.9
+  Scenario duration:
+    min: 6495.4
+    max: 13526.7
+    median: 6528.5
+    p95: 7983.7
+    p99: 9521.3
+  Codes:
+    200: 986
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:06:39(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 500
+  Requests completed:  1004
+  Concurrent users:    353
+  RPS sent: 90.91
+  Request latency:
+    min: 163.3
+    max: 7331.8
+    median: 335.2
+    p95: 1349.6
+    p99: 3344
+  Scenario duration:
+    min: 6495
+    max: 10027.3
+    median: 6530.9
+    p95: 7988.2
+    p99: 9532
+  Codes:
+    200: 1004
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:06:49(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 499
+  Requests completed:  1003
+  Concurrent users:    352
+  RPS sent: 91.17
+  Request latency:
+    min: 163
+    max: 7408.4
+    median: 335
+    p95: 1353.6
+    p99: 3343.5
+  Scenario duration:
+    min: 6495.4
+    max: 13945.4
+    median: 6530
+    p95: 8033.1
+    p99: 9541.4
+  Codes:
+    200: 1003
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:06:59(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 505
+  Requests completed:  1002
+  Concurrent users:    351
+  RPS sent: 91.72
+  Request latency:
+    min: 164
+    max: 3828.3
+    median: 334.9
+    p95: 1342.8
+    p99: 2852
+  Scenario duration:
+    min: 6493.2
+    max: 13577.4
+    median: 6530.4
+    p95: 8187.1
+    p99: 9767.9
+  Codes:
+    200: 1002
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:07:09(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 497
+  Requests completed:  1000
+  Concurrent users:    352
+  RPS sent: 90.26
+  Request latency:
+    min: 164.1
+    max: 7354.3
+    median: 335
+    p95: 1348.4
+    p99: 3348.4
+  Scenario duration:
+    min: 6492.1
+    max: 13536.5
+    median: 6529.8
+    p95: 8065.2
+    p99: 9956.5
+  Codes:
+    200: 1000
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:07:19(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 502
+  Requests completed:  999
+  Concurrent users:    351
+  RPS sent: 91.89
+  Request latency:
+    min: 163.8
+    max: 7797.7
+    median: 334.4
+    p95: 1355.2
+    p99: 3074.4
+  Scenario duration:
+    min: 6495.5
+    max: 13986.8
+    median: 6529.5
+    p95: 7988.4
+    p99: 9953.6
+  Codes:
+    200: 999
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:07:29(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 509
+  Requests completed:  1008
+  Concurrent users:    350
+  RPS sent: 91.7
+  Request latency:
+    min: 163.2
+    max: 7785.2
+    median: 334
+    p95: 1342.6
+    p99: 3011.9
+  Scenario duration:
+    min: 6495
+    max: 14441.8
+    median: 6531
+    p95: 7966.3
+    p99: 9952.3
+  Codes:
+    200: 1008
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:07:39(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 499
+  Requests completed:  1002
+  Concurrent users:    350
+  RPS sent: 91.61
+  Request latency:
+    min: 163
+    max: 4276.1
+    median: 335
+    p95: 1343.4
+    p99: 2067.6
+  Scenario duration:
+    min: 6493.4
+    max: 10621.8
+    median: 6528.5
+    p95: 7949
+    p99: 9527.2
+  Codes:
+    200: 1002
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:07:49(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 500
+  Requests completed:  998
+  Concurrent users:    347
+  RPS sent: 91.15
+  Request latency:
+    min: 164.3
+    max: 3351.3
+    median: 336.5
+    p95: 1346.5
+    p99: 2580.1
+  Scenario duration:
+    min: 6494.7
+    max: 9934.6
+    median: 6531.8
+    p95: 7765.6
+    p99: 8529.1
+  Codes:
+    200: 998
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:07:59(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 497
+  Requests completed:  1000
+  Concurrent users:    350
+  RPS sent: 90.88
+  Request latency:
+    min: 163.7
+    max: 7336.9
+    median: 336.6
+    p95: 1348.9
+    p99: 3331.7
+  Scenario duration:
+    min: 6494.8
+    max: 13510
+    median: 6533.6
+    p95: 7978.3
+    p99: 9757.4
+  Codes:
+    200: 1000
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:08:09(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 501
+  Requests completed:  1005
+  Concurrent users:    347
+  RPS sent: 91.25
+  Request latency:
+    min: 164.2
+    max: 3384.2
+    median: 335.8
+    p95: 1343.2
+    p99: 2900.9
+  Scenario duration:
+    min: 6496.4
+    max: 9979.1
+    median: 6530.7
+    p95: 7948.4
+    p99: 9523.7
+  Codes:
+    200: 1005
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:08:19(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 506
+  Requests completed:  1015
+  Concurrent users:    352
+  RPS sent: 91.88
+  Request latency:
+    min: 163.8
+    max: 3798.2
+    median: 336.8
+    p95: 1350.5
+    p99: 2345.6
+  Scenario duration:
+    min: 6497.5
+    max: 9972.4
+    median: 6533.7
+    p95: 8461.1
+    p99: 9513.5
+  Codes:
+    200: 1015
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:08:29(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 487
+  Requests completed:  977
+  Concurrent users:    353
+  RPS sent: 90.78
+  Request latency:
+    min: 163.2
+    max: 16869.5
+    median: 336.8
+    p95: 1345.8
+    p99: 2450.9
+  Scenario duration:
+    min: 6493.6
+    max: 23222.3
+    median: 6529.4
+    p95: 7964.5
+    p99: 9257.9
+  Codes:
+    200: 977
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:08:39(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 512
+  Requests completed:  1010
+  Concurrent users:    349
+  RPS sent: 91.51
+  Request latency:
+    min: 164.4
+    max: 5348.1
+    median: 335.5
+    p95: 1347.7
+    p99: 3348.4
+  Scenario duration:
+    min: 6492.1
+    max: 13520.9
+    median: 6532.5
+    p95: 7966.7
+    p99: 10591
+  Codes:
+    200: 1010
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:08:49(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 492
+  Requests completed:  991
+  Concurrent users:    352
+  RPS sent: 90.78
+  Request latency:
+    min: 163.6
+    max: 8767.3
+    median: 334.9
+    p95: 1353.9
+    p99: 3348.2
+  Scenario duration:
+    min: 6495.3
+    max: 11527.7
+    median: 6531.9
+    p95: 7976.5
+    p99: 9570
+  Codes:
+    200: 991
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:08:59(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 497
+  Requests completed:  1002
+  Concurrent users:    354
+  RPS sent: 91.6
+  Request latency:
+    min: 164.2
+    max: 8310.8
+    median: 336.6
+    p95: 1347.9
+    p99: 3351.7
+  Scenario duration:
+    min: 6495.2
+    max: 14947.7
+    median: 6530.5
+    p95: 8545.6
+    p99: 10498.8
+  Codes:
+    200: 1002
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:09:10(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 511
+  Requests completed:  1008
+  Concurrent users:    346
+  RPS sent: 91.96
+  Request latency:
+    min: 163.7
+    max: 4344.3
+    median: 334.4
+    p95: 1340.3
+    p99: 3330.5
+  Scenario duration:
+    min: 6494.5
+    max: 13517.8
+    median: 6530.9
+    p95: 7979.4
+    p99: 9969.2
+  Codes:
+    200: 1008
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:09:20(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 496
+  Requests completed:  1002
+  Concurrent users:    348
+  RPS sent: 91.51
+  Request latency:
+    min: 163.2
+    max: 4316
+    median: 337.3
+    p95: 1350.7
+    p99: 2877.8
+  Scenario duration:
+    min: 6495.2
+    max: 10568.3
+    median: 6530.2
+    p95: 7965.8
+    p99: 9527.6
+  Codes:
+    200: 1002
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:09:30(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 507
+  Requests completed:  1007
+  Concurrent users:    359
+  RPS sent: 92.04
+  Request latency:
+    min: 163.5
+    max: 7342.7
+    median: 333.9
+    p95: 1343.5
+    p99: 3347.7
+  Scenario duration:
+    min: 6495.4
+    max: 11515.1
+    median: 6529.9
+    p95: 8449.5
+    p99: 9951.5
+  Codes:
+    200: 1007
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:09:40(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 494
+  Requests completed:  1003
+  Concurrent users:    348
+  RPS sent: 90.93
+  Request latency:
+    min: 164.4
+    max: 7435.2
+    median: 337.3
+    p95: 1342.4
+    p99: 3341.6
+  Scenario duration:
+    min: 6495.6
+    max: 13522.2
+    median: 6531.2
+    p95: 7945.6
+    p99: 9564.8
+  Codes:
+    200: 1003
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:09:50(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 500
+  Requests completed:  991
+  Concurrent users:    351
+  RPS sent: 91.59
+  Request latency:
+    min: 163.8
+    max: 5296.2
+    median: 336.5
+    p95: 1345.3
+    p99: 2898.2
+  Scenario duration:
+    min: 6494.7
+    max: 13614.6
+    median: 6531.3
+    p95: 7948.1
+    p99: 9751.3
+  Codes:
+    200: 991
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:10:00(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 508
+  Requests completed:  1009
+  Concurrent users:    351
+  RPS sent: 92.13
+  Request latency:
+    min: 163.5
+    max: 7351.6
+    median: 333.6
+    p95: 1345.6
+    p99: 2342.5
+  Scenario duration:
+    min: 6493.3
+    max: 13533.3
+    median: 6532.1
+    p95: 7962.7
+    p99: 9540.4
+  Codes:
+    200: 1009
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:10:10(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 493
+  Requests completed:  990
+  Concurrent users:    354
+  RPS sent: 90.95
+  Request latency:
+    min: 163.4
+    max: 4496.7
+    median: 335.9
+    p95: 1354.7
+    p99: 3332.6
+  Scenario duration:
+    min: 6495.7
+    max: 10668.7
+    median: 6531.9
+    p95: 8003.3
+    p99: 9511
+  Codes:
+    200: 990
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:10:20(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 508
+  Requests completed:  1006
+  Concurrent users:    348
+  RPS sent: 91.58
+  Request latency:
+    min: 164.1
+    max: 8185.9
+    median: 334.8
+    p95: 1348.6
+    p99: 3344.3
+  Scenario duration:
+    min: 6495
+    max: 14533.7
+    median: 6536
+    p95: 8493.6
+    p99: 9965.8
+  Codes:
+    200: 1006
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:10:30(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 500
+  Requests completed:  1009
+  Concurrent users:    348
+  RPS sent: 91.59
+  Request latency:
+    min: 164.7
+    max: 3813.2
+    median: 336.2
+    p95: 1343.9
+    p99: 2768.4
+  Scenario duration:
+    min: 6495.8
+    max: 13533
+    median: 6536.5
+    p95: 7994.2
+    p99: 9530.9
+  Codes:
+    200: 1009
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:10:40(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 496
+  Requests completed:  994
+  Concurrent users:    349
+  RPS sent: 90.94
+  Request latency:
+    min: 164
+    max: 7832.2
+    median: 335.3
+    p95: 1349.9
+    p99: 3343.9
+  Scenario duration:
+    min: 6495.3
+    max: 11498.1
+    median: 6530.1
+    p95: 7950.5
+    p99: 9516.6
+  Codes:
+    200: 994
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:10:50(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 501
+  Requests completed:  999
+  Concurrent users:    350
+  RPS sent: 92.14
+  Request latency:
+    min: 163.3
+    max: 7356.6
+    median: 336.3
+    p95: 1349.2
+    p99: 3334.3
+  Scenario duration:
+    min: 6497.1
+    max: 14014.1
+    median: 6534
+    p95: 8524.3
+    p99: 10450.8
+  Codes:
+    200: 999
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:11:00(-0300) 2017-10-29
+  Scenarios launched:  502
+  Scenarios completed: 500
+  Requests completed:  997
+  Concurrent users:    356
+  RPS sent: 91.6
+  Request latency:
+    min: 163.5
+    max: 5352.3
+    median: 338.9
+    p95: 1354.3
+    p99: 3344.5
+  Scenario duration:
+    min: 6496.2
+    max: 13428.2
+    median: 6539.2
+    p95: 8492.2
+    p99: 9986.5
+  Codes:
+    200: 997
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:11:10(-0300) 2017-10-29
+  Scenarios launched:  500
+  Scenarios completed: 502
+  Requests completed:  1008
+  Concurrent users:    356
+  RPS sent: 91.22
+  Request latency:
+    min: 164.2
+    max: 7367.5
+    median: 337.5
+    p95: 1355.1
+    p99: 3341
+  Scenario duration:
+    min: 6497.3
+    max: 13548.2
+    median: 6537
+    p95: 8499.8
+    p99: 10209.4
+  Codes:
+    200: 1008
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:11:20(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 504
+  Requests completed:  1002
+  Concurrent users:    347
+  RPS sent: 92.14
+  Request latency:
+    min: 164
+    max: 7368.6
+    median: 334.8
+    p95: 1344
+    p99: 3338.7
+  Scenario duration:
+    min: 6496.6
+    max: 13951.9
+    median: 6531.9
+    p95: 7997.3
+    p99: 9531.7
+  Codes:
+    200: 1002
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:11:30(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 493
+  Requests completed:  996
+  Concurrent users:    351
+  RPS sent: 90.75
+  Request latency:
+    min: 164.1
+    max: 9092.5
+    median: 336.9
+    p95: 1350.3
+    p99: 3345.5
+  Scenario duration:
+    min: 6496.4
+    max: 14004.5
+    median: 6533.3
+    p95: 7981.4
+    p99: 9826.5
+  Codes:
+    200: 996
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:11:40(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 501
+  Requests completed:  1002
+  Concurrent users:    354
+  RPS sent: 92.58
+  Request latency:
+    min: 163.5
+    max: 7788.3
+    median: 333.7
+    p95: 1348.9
+    p99: 2556.8
+  Scenario duration:
+    min: 6494.4
+    max: 15260.6
+    median: 6529.2
+    p95: 8051.1
+    p99: 9531.6
+  Codes:
+    200: 1002
+
+Warning: High CPU usage warning.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 17:11:50(-0300) 2017-10-29
+  Scenarios launched:  501
+  Scenarios completed: 503
+  Requests completed:  1006
+  Concurrent users:    352
+  RPS sent: 91.83
+  Request latency:
+    min: 163.5
+    max: 15394.5
+    median: 336.7
+    p95: 1346
+    p99: 3046.6
+  Scenario duration:
+    min: 6495.5
+    max: 21588.2
+    median: 6533.8
+    p95: 7997
+    p99: 10580.3
+  Codes:
+    200: 1006
+
+Report @ 17:12:00(-0300) 2017-10-29
+  Scenarios launched:  191
+  Scenarios completed: 509
+  Requests completed:  731
+  Concurrent users:    347
+  RPS sent: 63.36
+  Request latency:
+    min: 163.4
+    max: 15358.1
+    median: 175.6
+    p95: 1332.7
+    p99: 3345.1
+  Scenario duration:
+    min: 6496.8
+    max: 13506
+    median: 6526.1
+    p95: 7969.7
+    p99: 9971.3
+  Codes:
+    200: 731
+
+Report @ 17:12:03(-0300) 2017-10-29
+  Scenarios launched:  0
+  Scenarios completed: 30
+  Requests completed:  30
+  Concurrent users:    7
+  RPS sent: 6.86
+  Request latency:
+    min: 165.5
+    max: 194.9
+    median: 170.6
+    p95: 183.5
+    p99: NaN
+  Scenario duration:
+    min: 6497.9
+    max: 21530.5
+    median: 7492.6
+    p95: 13528
+    p99: NaN
+  Codes:
+    200: 30
+
+All virtual users finished
+Summary report @ 17:12:03(-0300) 2017-10-29
+  Scenarios launched:  33649
+  Scenarios completed: 33649
+  Requests completed:  67298
+  RPS sent: 85
+  Request latency:
+    min: 162.9
+    max: 16869.5
+    median: 335.9
+    p95: 1348.9
+    p99: 3346.6
+  Scenario duration:
+    min: 6492.1
+    max: 23222.3
+    median: 6532.3
+    p95: 8436.3
+    p99: 11083.9
+  Scenario counts:
+    Search for single line stops: 33649 (100%)
+  Codes:
+    200: 67298
