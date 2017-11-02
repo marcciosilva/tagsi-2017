@@ -1,0 +1,560 @@
+[
+  {
+    "name": "AppModule",
+    "file": "utils/app/main.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "AppComponent",
+        "file": "utils/app/app.component.ts",
+        "selector": "my-app",
+        "providers": [],
+        "templateUrl": [],
+        "styleUrls": [],
+        "__raw": [
+          {
+            "pos": 243,
+            "end": 264,
+            "flags": 0,
+            "kind": 261,
+            "name": {
+              "pos": 243,
+              "end": 254,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 255,
+              "end": 264,
+              "flags": 0,
+              "kind": 9,
+              "text": "my-app"
+            }
+          },
+          {
+            "pos": 265,
+            "end": 2456,
+            "flags": 0,
+            "kind": 261,
+            "name": {
+              "pos": 265,
+              "end": 276,
+              "flags": 0,
+              "escapedText": "template"
+            },
+            "initializer": {
+              "pos": 277,
+              "end": 2456,
+              "flags": 0,
+              "kind": 13,
+              "text": "\n    <a id=\"hello\" style=\"background: #ccc\">#hello</a>\n    \n    <fieldset>\n      <legend>DOM functions</legend>\n      \n      <fieldset id=\"element-visible\"><legend>elementVisible Test</legend>\n        <div>elementVisible('#hello', 'body'): {{elementVisible('#hello', 'body') | json}}</div>\n      </fieldset>\n      \n      <fieldset id=\"computed-style\"><legend>computedStyle Test</legend>\n        <div>computedStyle('#hello', 'height'): {{computedStyle('#hello', 'height') | json}}</div>\n      </fieldset>\n      \n      <fieldset id=\"scroll-to\"><legend>scrollTo Test</legend>\n        <div>scrollTo('#hello', 'body'): {{scrollToResult}}</div>\n      </fieldset>\n      \n      <fieldset id=\"height-width\"><legend>outerHeight/outerWidth Test</legend>\n        <div id=\"outer-height\">outerHeight('#hello'): {{outerHeight('#hello')}}</div>\n        <div id=\"outer-width\">outerWidth('#hello'): {{outerWidth('#hello')}}</div>\n      </fieldset>\n      \n    </fieldset>\n    \n    <fieldset>\n      <legend>Pipes</legend>\n      <fieldset id=\"html-code\">\n        <legend>HtmlCodePipe: htmlCode</legend>\n        myHtml: {{myHtml}}\n        <div id=\"pie1\">myHtml | htmlCode: <pre>{{myHtml | htmlCode}}</pre></div>\n        <div id=\"pie2\">myHtml | htmlCode:'include' : <pre>{{myHtml | htmlCode:'include'}}</pre></div>\n        <div id=\"pie2\">myHtml | htmlCode:'ngui-utils-11' : <pre>{{myHtml | htmlCode:'ngui-utils-11'}}</pre></div>\n        <div id=\"pie3\">myHtml | htmlCode:'-include' <pre>{{myHtml | htmlCode:'-include'}}</pre></div>\n      </fieldset>\n      \n      <fieldset id=\"javascript-code\">\n        <legend>JavascriptCodePipe: jsCode</legend>\n        ngOnInit | jsCode:\n        <pre>{{ngOnInit | jsCode}}</pre>\n      </fieldset>\n      \n    </fieldset>\n      \n    <fieldset>\n      <legend>Directives</legend>\n      <ngui-utils-1> 1 </ngui-utils-1>\n      <ngui-utils-2> 2 </ngui-utils-2>\n      <ngui-utils-3> 3 </ngui-utils-3>\n      <ngui-utils-4> 4 </ngui-utils-4>\n      <ngui-utils-5> 5 </ngui-utils-5>\n    </fieldset>\n\n    <fieldset>\n      <legend>Services</legend>\n      <h3>Storage</h3>\n      {{this.storageValue}}\n      <h3>MemoryStorage</h3>\n      {{this.memStorageValue}}\n    </fieldset>\n  "
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "NguiUtilsModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "pos": 514,
+        "end": 558,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 514,
+          "end": 524,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 525,
+          "end": 558,
+          "flags": 0,
+          "kind": 177,
+          "elements": [
+            {
+              "pos": 527,
+              "end": 540,
+              "flags": 0,
+              "escapedText": "BrowserModule"
+            },
+            {
+              "pos": 541,
+              "end": 557,
+              "flags": 0,
+              "escapedText": "NguiUtilsModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 559,
+        "end": 590,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 559,
+          "end": 574,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 575,
+          "end": 590,
+          "flags": 0,
+          "kind": 177,
+          "elements": [
+            {
+              "pos": 577,
+              "end": 589,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 591,
+        "end": 621,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 591,
+          "end": 603,
+          "flags": 0,
+          "escapedText": "bootstrap"
+        },
+        "initializer": {
+          "pos": 604,
+          "end": 621,
+          "flags": 0,
+          "kind": 177,
+          "elements": [
+            {
+              "pos": 606,
+              "end": 619,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "NguiUtilsModule",
+    "file": "utils/src/utils.module.ts",
+    "providers": [
+      {
+        "name": "MemoryStorage"
+      },
+      {
+        "name": "Storage"
+      }
+    ],
+    "declarations": [
+      {
+        "name": "HtmlCodePipe"
+      },
+      {
+        "name": "JavascriptCodePipe"
+      },
+      {
+        "name": "NguiUtilsDirective"
+      }
+    ],
+    "imports": [],
+    "exports": [
+      {
+        "name": "HtmlCodePipe"
+      },
+      {
+        "name": "JavascriptCodePipe"
+      },
+      {
+        "name": "NguiUtilsDirective"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 668,
+        "end": 718,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 668,
+          "end": 680,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 681,
+          "end": 718,
+          "flags": 0,
+          "kind": 177,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 683,
+              "end": 701,
+              "flags": 0,
+              "escapedText": "MemoryStorage"
+            },
+            {
+              "pos": 702,
+              "end": 714,
+              "flags": 0,
+              "escapedText": "Storage"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 719,
+        "end": 806,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 719,
+          "end": 734,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 735,
+          "end": 806,
+          "flags": 0,
+          "kind": 177,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 737,
+              "end": 754,
+              "flags": 0,
+              "escapedText": "HtmlCodePipe"
+            },
+            {
+              "pos": 755,
+              "end": 778,
+              "flags": 0,
+              "escapedText": "JavascriptCodePipe"
+            },
+            {
+              "pos": 779,
+              "end": 802,
+              "flags": 0,
+              "escapedText": "NguiUtilsDirective"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 807,
+        "end": 889,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 807,
+          "end": 817,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 818,
+          "end": 889,
+          "flags": 0,
+          "kind": 177,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 820,
+              "end": 837,
+              "flags": 0,
+              "escapedText": "HtmlCodePipe"
+            },
+            {
+              "pos": 838,
+              "end": 861,
+              "flags": 0,
+              "escapedText": "JavascriptCodePipe"
+            },
+            {
+              "pos": 862,
+              "end": 885,
+              "flags": 0,
+              "escapedText": "NguiUtilsDirective"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppModule",
+    "file": "src/app/app.module.ts",
+    "providers": [
+      {
+        "name": "HttpClient"
+      }
+    ],
+    "declarations": [
+      {
+        "name": "AppComponent",
+        "file": "src/app/app.component.ts",
+        "selector": "app-root",
+        "providers": [],
+        "templateUrl": [
+          "app.component.html"
+        ],
+        "styleUrls": [
+          "app.component.css"
+        ],
+        "__raw": [
+          {
+            "pos": 181,
+            "end": 204,
+            "flags": 0,
+            "kind": 261,
+            "name": {
+              "pos": 181,
+              "end": 192,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 193,
+              "end": 204,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-root"
+            }
+          },
+          {
+            "pos": 205,
+            "end": 243,
+            "flags": 0,
+            "kind": 261,
+            "name": {
+              "pos": 205,
+              "end": 219,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 220,
+              "end": 243,
+              "flags": 0,
+              "kind": 9,
+              "text": "./app.component.html"
+            }
+          },
+          {
+            "pos": 244,
+            "end": 281,
+            "flags": 0,
+            "kind": 261,
+            "name": {
+              "pos": 244,
+              "end": 256,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 257,
+              "end": 281,
+              "flags": 0,
+              "kind": 177,
+              "elements": [
+                {
+                  "pos": 259,
+                  "end": 280,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./app.component.css"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "SearchBarComponent"
+      },
+      {
+        "name": "MapComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "NguiAutoCompleteModule"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "HttpClientModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "pos": 527,
+        "end": 608,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 527,
+          "end": 542,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 543,
+          "end": 608,
+          "flags": 0,
+          "kind": 177,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 545,
+              "end": 562,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            },
+            {
+              "pos": 563,
+              "end": 586,
+              "flags": 0,
+              "escapedText": "SearchBarComponent"
+            },
+            {
+              "pos": 587,
+              "end": 604,
+              "flags": 0,
+              "escapedText": "MapComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 609,
+        "end": 811,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 609,
+          "end": 619,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 620,
+          "end": 811,
+          "flags": 0,
+          "kind": 177,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 622,
+              "end": 640,
+              "flags": 0,
+              "escapedText": "BrowserModule"
+            },
+            {
+              "pos": 641,
+              "end": 668,
+              "flags": 0,
+              "escapedText": "NguiAutoCompleteModule"
+            },
+            {
+              "pos": 669,
+              "end": 685,
+              "flags": 0,
+              "escapedText": "FormsModule"
+            },
+            {
+              "pos": 686,
+              "end": 707,
+              "flags": 0,
+              "escapedText": "HttpClientModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 812,
+        "end": 838,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 812,
+          "end": 824,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 825,
+          "end": 838,
+          "flags": 0,
+          "kind": 177,
+          "elements": [
+            {
+              "pos": 827,
+              "end": 837,
+              "flags": 0,
+              "escapedText": "HttpClient"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 839,
+        "end": 867,
+        "flags": 0,
+        "kind": 261,
+        "name": {
+          "pos": 839,
+          "end": 851,
+          "flags": 0,
+          "escapedText": "bootstrap"
+        },
+        "initializer": {
+          "pos": 852,
+          "end": 867,
+          "flags": 0,
+          "kind": 177,
+          "elements": [
+            {
+              "pos": 854,
+              "end": 866,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
